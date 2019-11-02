@@ -102,3 +102,5 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+day1/__pycache__
