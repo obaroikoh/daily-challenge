@@ -8,14 +8,13 @@ def product_of_elements(arr):
         return False
 
     result = []
-    value = None
     for i in range(len(arr)):
         product = 1
-        value = arr[i]
-        for num in arr:
-            if num == value:
+        current_index = i
+        for index, value in enumerate(arr):
+            if index == current_index:
                 continue
             else:
-                product *= num
+                product *= value
         result.append(product)
     return result
